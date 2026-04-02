@@ -14,7 +14,7 @@ namespace DotnetLocationRest.Data
 
         public List<Client> GetAll()
         {
-            var clients = new List<Client>();
+            var clients = new List<Client>() ;
 
             using var conn = _factory.Create();
             conn.Open();
